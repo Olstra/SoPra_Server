@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ch.uzh.ifi.hase.soprafs21.controller.html">ch.uzh.ifi.hase.soprafs21.controller</a> &gt; UserControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.226s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createUser_validInput_userCreated()</td>
+<td class="success">0.074s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenUsers_whenGetUsers_thenReturnJsonArray()</td>
+<td class="success">0.152s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-03-08 20:09:44.109  INFO 27133 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest], using SpringBootContextLoader
+2021-03-08 20:09:44.110  INFO 27133 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-08 20:09:44.110  INFO 27133 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-08 20:09:44.121  INFO 27133 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration ch.uzh.ifi.hase.soprafs21.Application for test class ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest
+2021-03-08 20:09:44.122  INFO 27133 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-08 20:09:44.123  INFO 27133 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5782e31e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@750349f7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@314b352d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@52de85bf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@128416e9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7da7a9bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@152d197b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@33f8951c, org.springframework.test.context.event.EventPublishingTestExecutionListener@1f9fed4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@41534505, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc86a95, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4b6f4865, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ae0082, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5e0e165f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@21ed53c9]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.2)
+
+2021-03-08 20:09:44.157  INFO 27133 --- [    Test worker] c.u.i.h.s.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on oliver-dell with PID 27133 (started by oliver in /home/oliver/Documents/UZH/2021_FS/SoPra/Ex 1/SoPra_Server)
+2021-03-08 20:09:44.158  INFO 27133 --- [    Test worker] c.u.i.h.s.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-03-08 20:09:44.498  INFO 27133 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-08 20:09:44.621  INFO 27133 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-08 20:09:44.622  INFO 27133 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-08 20:09:44.623  INFO 27133 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-03-08 20:09:44.641  INFO 27133 --- [    Test worker] c.u.i.h.s.controller.UserControllerTest  : Started UserControllerTest in 0.514 seconds (JVM running for 10.997)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8.1</a> at Mar 8, 2021 8:09:45 PM</p>
+</div>
+</div>
+</body>
+</html>
