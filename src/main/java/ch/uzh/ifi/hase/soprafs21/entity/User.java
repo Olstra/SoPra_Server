@@ -28,6 +28,10 @@ public class User implements Serializable {
     @Column(nullable = false, unique = true)
     private String username;
 
+    // add column to store pw
+    @Column(nullable = false)
+    private String password;
+
     @Column(nullable = false, unique = true)
     private String token;
 
@@ -72,5 +76,13 @@ public class User implements Serializable {
 
     public void setStatus(UserStatus status) {
         this.status = status;
+    }
+
+    // getter and setter for pw
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

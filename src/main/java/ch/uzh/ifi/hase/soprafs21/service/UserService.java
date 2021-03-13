@@ -74,4 +74,16 @@ public class UserService {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, String.format(baseErrorMessage, "name", "is"));
         }
     }
+
+    public User getUserInfo(String username){
+
+        // the get user info
+        User userByUsername = userRepository.findByUsername(username);
+
+        if(userByUsername != null){ return userByUsername; }
+
+        log.debug("user was not found!");
+        return null;
+
+    }
 }
