@@ -19,3 +19,5 @@ ch/uzh/ifi/hase/soprafs21/exceptions/GlobalExceptionAdvice.java
  ch.uzh.ifi.hase.soprafs21.exceptions.GlobalExceptionAdvice
 ch/uzh/ifi/hase/soprafs21/service/UserService.java
  ch.uzh.ifi.hase.soprafs21.service.UserService
+ch/uzh/ifi/hase/soprafs21/rest/dto/UserPutDTO.java
+ ch.uzh.ifi.hase.soprafs21.rest.dto.UserPutDTO

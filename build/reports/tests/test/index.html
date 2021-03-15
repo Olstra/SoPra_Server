@@ -26,7 +26,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">5</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.173s</div>
+<div class="counter">0.428s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,41 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest.html#createUser_validInput_userCreated()">createUser_validInput_userCreated()</a>
+</li>
+<li>
+<a href="classes/ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest.html">UserControllerTest</a>.
+<a href="classes/ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest.html#givenUsers_whenGetUsers_thenReturnJsonArray()">givenUsers_whenGetUsers_thenReturnJsonArray()</a>
+</li>
+<li>
+<a href="classes/ch.uzh.ifi.hase.soprafs21.repository.UserRepositoryIntegrationTest.html">UserRepositoryIntegrationTest</a>.
+<a href="classes/ch.uzh.ifi.hase.soprafs21.repository.UserRepositoryIntegrationTest.html#findByName_success()">findByName_success()</a>
+</li>
+<li>
+<a href="classes/ch.uzh.ifi.hase.soprafs21.service.UserServiceIntegrationTest.html">UserServiceIntegrationTest</a>.
+<a href="classes/ch.uzh.ifi.hase.soprafs21.service.UserServiceIntegrationTest.html#createUser_duplicateUsername_throwsException()">createUser_duplicateUsername_throwsException()</a>
+</li>
+<li>
+<a href="classes/ch.uzh.ifi.hase.soprafs21.service.UserServiceIntegrationTest.html">UserServiceIntegrationTest</a>.
+<a href="classes/ch.uzh.ifi.hase.soprafs21.service.UserServiceIntegrationTest.html#createUser_validInputs_success()">createUser_validInputs_success()</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -79,24 +107,24 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/ch.uzh.ifi.hase.soprafs21.controller.html">ch.uzh.ifi.hase.soprafs21.controller</a>
 </td>
 <td>2</td>
+<td>2</td>
 <td>0</td>
-<td>0</td>
-<td>0.226s</td>
-<td class="success">100%</td>
+<td>0.001s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/ch.uzh.ifi.hase.soprafs21.repository.html">ch.uzh.ifi.hase.soprafs21.repository</a>
 </td>
 <td>1</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0.022s</td>
-<td class="success">100%</td>
+<td>0.260s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
 <td class="success">
@@ -105,23 +133,23 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.037s</td>
+<td>0.009s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/ch.uzh.ifi.hase.soprafs21.service.html">ch.uzh.ifi.hase.soprafs21.service</a>
 </td>
 <td>5</td>
+<td>2</td>
 <td>0</td>
-<td>0</td>
-<td>0.888s</td>
-<td class="success">100%</td>
+<td>0.158s</td>
+<td class="failures">60%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -136,24 +164,24 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest.html">ch.uzh.ifi.hase.soprafs21.controller.UserControllerTest</a>
 </td>
 <td>2</td>
+<td>2</td>
 <td>0</td>
-<td>0</td>
-<td>0.226s</td>
-<td class="success">100%</td>
+<td>0.001s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/ch.uzh.ifi.hase.soprafs21.repository.UserRepositoryIntegrationTest.html">ch.uzh.ifi.hase.soprafs21.repository.UserRepositoryIntegrationTest</a>
 </td>
 <td>1</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0.022s</td>
-<td class="success">100%</td>
+<td>0.260s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
 <td class="success">
@@ -162,18 +190,18 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.037s</td>
+<td>0.009s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/ch.uzh.ifi.hase.soprafs21.service.UserServiceIntegrationTest.html">ch.uzh.ifi.hase.soprafs21.service.UserServiceIntegrationTest</a>
 </td>
 <td>2</td>
+<td>2</td>
 <td>0</td>
-<td>0</td>
-<td>0.619s</td>
-<td class="success">100%</td>
+<td>0.004s</td>
+<td class="failures">0%</td>
 </tr>
 <tr>
 <td class="success">
@@ -182,7 +210,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.269s</td>
+<td>0.154s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -196,7 +224,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.1</a> at Mar 8, 2021 8:09:45 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8.1</a> at Mar 14, 2021 3:58:45 PM</p>
 </div>
 </div>
 </body>

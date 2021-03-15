@@ -12,7 +12,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 /**
@@ -39,9 +41,13 @@ public class UserService {
 
     public User createUser(User newUser) {
         newUser.setToken(UUID.randomUUID().toString());
-        newUser.setStatus(UserStatus.OFFLINE);
+        newUser.setStatus(UserStatus.ONLINE); // set to ON after creation since redirected to profile
 
         checkIfUserExists(newUser);
+
+        // add creation date
+        Date creationDate = new Date();
+        newUser.setCreationDate(creationDate);
 
         // saves the given entity but data is only persisted in the database once flush() is called
         newUser = userRepository.save(newUser);
@@ -75,15 +81,37 @@ public class UserService {
         }
     }
 
-    public User getUserInfo(String username){
+    public User getUserWithUsername(String username){
+        User user = userRepository.findByUsername(username);
 
-        // the get user info
-        User userByUsername = userRepository.findByUsername(username);
+        if(user != null){ return user; }
+        else{
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("couldn't find that user!", "username", "is"));
+        }
+    }
 
-        if(userByUsername != null){ return userByUsername; }
+    public void logoutUser(User foundUser) {
+        // TODO logout user
+        foundUser.setStatus(UserStatus.OFFLINE);
+    }
 
-        log.debug("user was not found!");
-        return null;
+    public void changeUserValues(String username, User updatedInfo) {
+        User currUsernameU = getUserWithUsername(username);
+        User newUsernameU = userRepository.findByUsername(updatedInfo.getUsername());
 
+        // first check if birthday was updated
+        if(updatedInfo.getBirthday() != null){
+            currUsernameU.setBirthday( updatedInfo.getBirthday() );
+        }
+
+        // check if username already taken (aka new user username was not null)
+        if(newUsernameU != null){
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username already taken!");
+        } else if(updatedInfo.getUsername() != null) {
+            currUsernameU.setUsername(updatedInfo.getUsername());
+        }
+
+        // save changes
+        userRepository.flush();
     }
 }
